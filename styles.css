@@ -5,7 +5,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: azure;
+    background: url("background.avif");
+    background-size: contain;
     color: #333;
 }
 
@@ -47,10 +48,15 @@ main {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: antiquewhite;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: -25px;
     border-radius: 10px;
+}
+
+main a {
+    text-decoration: none;
+    color: darkred;
 }
 
 /* Sections */
@@ -59,7 +65,7 @@ section {
 }
 
 section h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333;
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
@@ -114,16 +120,16 @@ footer {
 .education {
     position: fixed;
     bottom: 10px;
-    background: darkcyan;
+    background: #333333;
     padding: 10px 20px;
     border-radius: 10px;
-    color: azure;
+    color: #fff;
 }
 
 .education_head {
     margin: 0;
     padding: 0;
-    color: azure;
+    color: #fff;
 }
 
 .education_date {
@@ -157,7 +163,7 @@ footer {
 }
 
 .fixed-wave:hover {
-    background-color: azure;
+    background-color: #fff;
 }
 
 .skill {
@@ -172,6 +178,10 @@ footer {
 .degree {
     filter: invert();
 }
+
+/*.contact-h2 {*/
+/*    margin: auto;*/
+/*}*/
 
 @keyframes vibrate {
     0% { transform: translate(1px, 1px) rotate(0deg); }
