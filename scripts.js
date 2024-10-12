@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-    earthquake();
+    // earthquake();
 });
 
-document.body.addEventListener("click", function () {
+document.getElementById('earthquake').addEventListener("click", function () {
     earthquake();
 });
 

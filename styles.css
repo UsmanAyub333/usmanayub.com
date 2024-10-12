@@ -160,6 +160,18 @@ footer {
     background-color: azure;
 }
 
+.skill {
+    display: flex;
+}
+
+.skill-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.degree {
+    filter: invert();
+}
 
 @keyframes vibrate {
     0% { transform: translate(1px, 1px) rotate(0deg); }
