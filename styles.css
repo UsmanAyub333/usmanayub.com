@@ -1,7 +1,7 @@
 /* PING */
 /* General styles */
 body {
-    font-family: monospace;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -48,7 +48,7 @@ main {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
-    background-color: antiquewhite;
+    background-color: azure;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: -25px;
     border-radius: 10px;
