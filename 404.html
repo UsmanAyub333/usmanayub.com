@@ -3,35 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
+    <meta name="robots" content="noindex, follow">
+    <title>404 | Usman Ayub</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
+        :root {
+            --bg: #101722;
+            --panel: rgba(255, 251, 245, 0.1);
+            --text: #f5efe7;
+            --muted: rgba(245, 239, 231, 0.72);
+            --accent: #dfb9a4;
+            --line: rgba(255, 255, 255, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f1f1f1;
+            display: grid;
+            place-items: center;
+            padding: 1.5rem;
+            background:
+                radial-gradient(circle at top left, rgba(177, 93, 49, 0.16), transparent 20rem),
+                radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.08), transparent 20rem),
+                linear-gradient(180deg, #101722 0%, #172233 100%);
+            color: var(--text);
+            font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
         }
-        .message {
-            text-align: center;
+
+        .panel {
+            width: min(100%, 38rem);
+            padding: 2rem;
+            border: 1px solid var(--line);
+            border-radius: 28px;
+            background: var(--panel);
+            backdrop-filter: blur(14px);
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
         }
-        h1 {
-            font-size: 3rem;
-            color: #333;
-        }
+
         p {
-            font-size: 1.5rem;
-            color: #666;
+            margin: 0;
+        }
+
+        .eyebrow {
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0.8rem 0;
+            font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+            font-size: clamp(2.6rem, 8vw, 4.5rem);
+            line-height: 1;
+            letter-spacing: -0.03em;
+        }
+
+        .copy {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 3rem;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.2rem;
+            border-radius: 999px;
+            background: #b15d31;
+            color: #fff9f2;
+            font-weight: 600;
+            text-decoration: none;
         }
     </style>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<div class="message">
-    <h1>404</h1>
-    <p>Page Not Found</p>
-</div>
+<main class="panel">
+    <p class="eyebrow">404</p>
+    <h1>Page not found.</h1>
+    <p class="copy">
+        The page you are looking for does not exist or has moved. Head back to the portfolio homepage.
+    </p>
+    <a href="/">Return home</a>
+</main>
 </body>
 </html>
